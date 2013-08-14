@@ -170,18 +170,25 @@ header .header-bg {
   margin-top: 5px;
 }
 
-.widget.companyname h1 {
+.widget.companyname a {
+  font-family:@font-swatch10-font-family;
+  font-weight: @font-swatch10-font-weight;
+  color:@font-swatch10-color;
+  line-height:@font-swatch10-line-height;
+  letter-spacing: @font-swatch10-letter-spacing;
+  font-size: @font-swatch10-font-size;
+
   float: left;
-    font-size:@font-swatch1-font-size;
-    line-height:@font-swatch1-line-height;
-    color: @color-swatch6;
-    margin: 0;
-    padding: 0;
-    -webkit-transform: rotate(0deg) skew(-8deg, 0);
-    -moz-transform: rotate(0deg) skew(-8deg, 0);
-    -ms-transform: rotate(0deg) skew(-8deg, 0);
-     -o-transform: rotate(0deg) skew(-8deg, 0);
-        transform: rotate(0deg) skew(-8deg, 0);
+  -webkit-transform: rotate(0deg) skew(-8deg, 0);
+  -moz-transform: rotate(0deg) skew(-8deg, 0);
+  -ms-transform: rotate(0deg) skew(-8deg, 0);
+   -o-transform: rotate(0deg) skew(-8deg, 0);
+      transform: rotate(0deg) skew(-8deg, 0);
+}
+
+.widget.companyname a:hover {
+  text-decoration: none;
+  cursor: pointer;
 }
 
 /* LOGO */

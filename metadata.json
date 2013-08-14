@@ -54,9 +54,9 @@
        "title": "Titillium Web",
         "font1": {
             "font-family": "Titillium Web",
-            "font-size": "39px",
+            "font-size": "36px",
             "font-weight": "400",
-            "line-height": "32px",
+            "line-height": "36px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
@@ -126,6 +126,14 @@
             "font-size": "28px",
             "font-weight": "400",
             "line-height": "36px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "Titillium Web",
+            "font-size": "39px",
+            "font-weight": "400",
+            "line-height": "32px",
             "color": "@color-swatch1",
             "letter-spacing": "inherit"
         }
