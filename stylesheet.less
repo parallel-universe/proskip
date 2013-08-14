@@ -1,0 +1,1970 @@
+body {
+  background-color: @color-swatch1;
+  background-image: image('/images/bg-texture.png');
+  background-repeat: repeat;
+  background-position: top left;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+    width: 90%;
+    margin: 0 5%;
+
+}
+
+title {
+  display: block!important;
+}
+
+a {
+  font-family:@font-swatch2-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight:@font-swatch5-font-weight;
+  color:@color-swatch3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5, p {
+  margin: 0;
+  padding: 0 0 10px;
+}
+
+h1 {
+  font-family:@font-swatch1-font-family;
+  font-weight: @font-swatch1-font-weight;
+  color:@font-swatch1-color;
+  line-height:@font-swatch1-line-height;
+  letter-spacing: @font-swatch1-letter-spacing;
+  font-size: @font-swatch1-font-size;
+}
+
+h2
+{
+  font-family:@font-swatch2-font-family;
+  font-size: @font-swatch2-font-size;
+  font-weight: @font-swatch2-font-weight;
+  line-height:@font-swatch2-line-height;
+  color: @font-swatch2-color;
+  letter-spacing: @font-swatch2-letter-spacing;
+}
+
+h3
+{
+  font-family:@font-swatch3-font-family;
+  font-size:@font-swatch3-font-size;
+  font-weight: @font-swatch3-font-weight;
+  color: @font-swatch3-color;
+  line-height:@font-swatch3-line-height;
+  letter-spacing: @font-swatch3-letter-spacing;
+}
+
+h4
+{
+  font-family:@font-swatch4-font-family;
+  font-size:@font-swatch4-font-size;
+  font-weight:@font-swatch4-font-weight;
+  line-height:@font-swatch4-line-height;
+  color:@font-swatch4-color;
+  letter-spacing: @font-swatch4-letter-spacing;
+}
+
+p
+{
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+}
+
+ul, ol, li {
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight: @font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+}
+
+blockquote {
+  background: lighten(@color-swatch5,20%);
+  margin:0;
+  padding: 14px 16px;
+  quotes:"\201C""\201D""\2018""\2019";
+}
+
+blockquote {
+  background: darken(@color-swatch1,5%);
+  border: 1px solid darken(@color-swatch1,10%);
+  margin:0;
+  padding: 20px;
+  quotes:"\201C""\201D""\2018""\2019";
+  font-family:@font-swatch5-font-family;
+  font-size:@font-swatch5-font-size;
+  font-weight:@font-swatch5-font-weight;
+  line-height:@font-swatch5-line-height;
+  color:@font-swatch5-color;
+}
+
+blockquote:before {
+  font-family: georgia;
+  color: @font-swatch5-color;
+  content:open-quote;
+  font-size:4em;
+  line-height:.1em;
+  margin-right:.1em;
+  vertical-align:-.4em;
+}
+
+
+
+/* ===============================
+   CUSTOM CSS
+   =============================== */
+
+.main {
+  padding: 40px 0;
+}
+
+body.edit .widget.navigation, body.edit .widget.extendednavigation {
+  overflow: visible;
+}
+
+
+
+/* ===============================
+   HEADER
+   =============================== */
+
+header {
+  padding: 0px;
+}
+
+header .header-bg {
+  width: 100%;
+  background-color: @color-swatch7;
+  background-image: image('/images/header-bg.png');
+  background-repeat: repeat;
+  background-position: top center;
+  padding: 56px 0px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.companyheader {
+  display: block;
+}
+
+/* COMPANY NAME */
+
+.widget.companyname {
+  float: left;
+  margin-top: 5px;
+}
+
+.widget.companyname h1 {
+  float: left;
+    font-size:@font-swatch1-font-size;
+    line-height:@font-swatch1-line-height;
+    color: @color-swatch6;
+    margin: 0;
+    padding: 0;
+    -webkit-transform: rotate(0deg) skew(-8deg, 0);
+    -moz-transform: rotate(0deg) skew(-8deg, 0);
+    -ms-transform: rotate(0deg) skew(-8deg, 0);
+     -o-transform: rotate(0deg) skew(-8deg, 0);
+        transform: rotate(0deg) skew(-8deg, 0);
+}
+
+/* LOGO */
+
+.widget.logo {
+  float: left;
+  margin-right: 10px;
+}
+
+/* HEADER PROFILE */
+
+header .header-profilephone {
+    float: right;
+}
+
+header .header-profilephone span {
+    background-image: image('/images/ic-call.svg');
+    background-size: 7px;
+    background-repeat: no-repeat;
+    background-position: 17px center;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    padding: 7px 14px 7px 36px;
+    border: 2px solid @color-swatch2;
+
+    color: @color-swatch1;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height: 2.3;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+/* NAV BG */
+
+header nav {
+    background-color: @font-swatch6-background-color;
+}
+
+header nav .widget.socialicons {
+    float: left;
+}
+
+header nav .welcome-text {
+    float: left;
+    padding: 16px 0px;
+}
+
+header nav .welcome-text h1, header nav .welcome-text h2, 
+header nav .welcome-text h3, header nav .welcome-text h4,
+header nav .welcome-text p {
+    font-size: @font-swatch6-font-size;
+    color: @font-swatch6-color;
+    font-weight: @font-swatch6-font-weight;
+    text-shadow: 0px 1px 1px rgba(0,0,0,0.2);
+    padding-bottom: 0;
+}
+
+
+/* ===============================
+   FOOTER
+   =============================== */
+
+footer {
+  padding: 4em 0em;
+  background-image: image('/images/dark-texture.png');
+  background-repeat: repeat;
+  background-color: @color-swatch7;
+  color: @color-swatch1;
+}
+
+footer h1, footer h2, footer h3, footer h4 {
+  color: @color-swatch1;
+  padding-bottom: 20px;
+}
+
+
+/* ===============================
+   STANDARD NAVIGATION
+   =============================== */
+
+.widget.navigation {
+}
+
+.widget.navigation ul {
+  padding: 0;
+  margin: 20px 0 0;
+}
+
+.widget.navigation ul.align-center li
+{
+  text-align: center;
+}
+
+.widget.navigation ul.align-left li
+{
+  text-align: left;
+}
+
+.widget.navigation ul.align-right li
+{
+  text-align: right;
+}
+
+.widget.navigation ul li {
+  float: left;
+  display: block;
+  padding-right: 40px;
+}
+
+.widget.navigation ul li a {
+  display: block;
+  font-family:@font-swatch6-font-family;
+  font-size:@font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+  color: @font-swatch6-color;
+  line-height:@font-swatch6-line-height;
+  letter-spacing: @font-swatch6-letter-spacing;
+}
+
+.widget.navigation ul li a:hover {
+  text-decoration: none;
+  color: @color-swatch3;
+}
+
+/* ===============================
+   EXTENDED NAVIGATION
+   =============================== */
+
+.widget.extendednavigation {
+  position: relative;
+  float: right;
+}
+
+.widget.extendednavigation ul {
+  padding: 0;
+  margin: 0;
+}
+
+.widget.extendednavigation a.pull {
+  display: none;
+}
+
+.widget.extendednavigation ul.align-center li
+{
+  text-align: center;
+}
+
+.widget.extendednavigation ul.align-left li
+{
+  text-align: left;
+}
+
+.widget.extendednavigation ul.align-right li
+{
+  text-align: right;
+}
+
+.widget.extendednavigation ul li {
+  display: inline-block;
+  float: left;
+}
+
+.widget.extendednavigation ul li:hover {
+  color: @color-swatch3;
+}
+
+.widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+  display: block;
+  padding: 17px 26px;
+  margin: 0;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+
+  font-family:@font-swatch6-font-family;
+  font-size:@font-swatch6-font-size;
+  font-weight: @font-swatch6-font-weight;
+  color: @font-swatch6-color;
+  line-height:@font-swatch6-line-height;
+  letter-spacing: @font-swatch6-letter-spacing;
+}
+
+.widget.extendednavigation ul li a:hover, .widget.extendednavigation ul li.folder:hover {
+  background-color: @font-swatch6-background-color-hover;
+  text-decoration: none;
+}
+
+.widget.extendednavigation ul li.folder {
+  padding-left: 10px;
+  background-image: image('/images/nav-arrow.png');
+  background-position: 20px center;
+  background-repeat: no-repeat;
+  height: 100%;
+  cursor: pointer;
+}
+
+.widget.extendednavigation li > ul {
+  display: none;
+}
+
+.widget.extendednavigation ul li:hover > ul {
+  display: block;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  background-color: @color-swatch1;
+  z-index: 500;
+  padding: 20px 0;
+}
+
+.widget.extendednavigation ul li:hover > ul li {
+  display: block;
+  width: 100%;
+  text-align: left;
+}
+
+.widget.extendednavigation ul li:hover > ul li .text {
+  padding: 0 0 0 16px;
+  background-image: image('/images/arrow-left.png');
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.widget.extendednavigation ul li:hover > ul li a:hover {
+    background-color: transparent;
+}
+
+.widget.extendednavigation ul li:hover > ul li a {
+    padding: 0px 30px;
+}
+
+.widget.extendednavigation ul li:hover > ul li a .text {
+    color: @font-swatch5-color;
+    text-shadow: none;
+    padding: 6px 38px;
+}
+
+.widget.extendednavigation ul li:hover > ul li a .text:hover {
+    color: @color-swatch3;
+}
+
+/* EXTENDED NAVIGATION - INSIDE ZONE */
+
+.main .widget.extendednavigation {
+    max-width: 100%;
+    width: 100%;
+    float: none;
+}
+
+.main .widget.extendednavigation:before,
+.main .widget.extendednavigation:after {
+  content: " ";
+  display: table;
+}
+.main .widget.extendednavigation:after {
+  clear: both;
+}
+.main .widget.extendednavigation {
+  *zoom: 1;
+}
+
+.main .widget.extendednavigation ul li a, 
+.main .widget.extendednavigation ul li.folder .text {
+  color: @font-swatch4-color;
+  text-shadow: none;
+}
+
+.main .widget.extendednavigation ul li.folder {
+  background-image: image('/images/nav-arrow-gr.png');
+}
+
+.main .widget.extendednavigation ul li a:hover, 
+.main .widget.extendednavigation ul li.folder:hover {
+  background-color: @color-swatch1;
+  text-decoration: none;
+}
+
+
+
+
+/* ===============================
+   FEATURE
+   =============================== */
+
+.widget.feature .feature-bgimg {
+  height: 460px;
+ }
+
+.widget.feature .content {
+  display: block;
+  padding: 30px 0px 0px;
+  text-align: left;
+  height: 460px;
+}
+
+.widget.feature .content .spare {
+
+}
+
+.widget.feature .content .spare.wrapper {
+  margin: 0;
+  width: 100%;
+}
+
+/* FEATURE TITLE */
+
+.widget.feature h2 span, .widget.feature h3 span {
+  display: inline-block;
+  padding: 15px;
+  background-color: hsla(hue(@color-swatch4), saturation(@color-swatch4), lightness(lighten(@color-swatch4,10%)), 0.6); 
+}
+
+.widget.feature h2 {
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  font-family:@font-swatch8-font-family;
+  font-size:@font-swatch8-font-size;
+  font-weight: @font-swatch8-font-weight;
+  line-height:@font-swatch8-line-height;
+  color: @font-swatch8-color;
+  letter-spacing: @font-swatch8-letter-spacing;
+}
+
+/* FEATURE STRAPLINE */
+
+.widget.feature h3 {
+  text-transform: uppercase;
+  padding-bottom: 4px;
+  font-family:@font-swatch9-font-family;
+  font-size:@font-swatch9-font-size;
+  font-weight: @font-swatch9-font-weight;
+  line-height:@font-swatch9-line-height;
+  color: @font-swatch9-color;
+  letter-spacing: @font-swatch9-letter-spacing;
+}
+
+.widget.feature button
+{
+  margin: 0;
+  padding: 12px 20px;
+  border: 0;
+  font-family: @font-swatch7-font-family;
+  font-weight:@font-swatch7-font-weight;
+  font-size: @font-swatch7-font-size;
+  background-color: @font-swatch7-background-color;
+  color: @font-swatch7-color;
+  letter-spacing: @font-swatch7-letter-spacing;
+  text-decoration: none;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.widget.feature button:hover {
+    background-color: @font-swatch7-background-color-hover;
+    cursor: pointer;
+}
+
+.widget.feature button:active {
+    box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+/* BUTTON ALIGNMENTS */
+
+.widget.feature button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.feature button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.feature button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.feature button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.feature button.btn.italic {
+    font-style: italic;
+}
+
+.widget.feature button.btn.bold {
+    font-weight: bold;
+}
+
+.widget.feature button span {
+    vertical-align: center;
+}
+
+.widget.feature button i {
+    margin-right: 5px;
+}
+
+
+/* ===============================
+   FEATURE LAYOUTS
+   =============================== */
+
+/* LEFT ALIGN */
+
+.widget.feature.align-left .content {
+  width: 100%;
+  text-align: left;
+}
+
+/* CENTER ALIGN */
+
+.widget.feature.align-center .content {
+  width: 100%;
+  text-align: center;
+}
+
+/* RIGHT ALIGN */
+
+.widget.feature.align-right .content {
+  width: 100%;
+  text-align: right;
+}
+
+/* BUTTON BOTTOM RIGHT */
+
+.widget.feature.btn-bottom-right .content{
+  width: 100%;
+  text-align: left;
+}
+
+.widget.feature.btn-bottom-right h3 {
+  vertical-align: middle;
+}
+
+.widget.feature.btn-bottom-right button {
+  vertical-align: middle;
+}
+
+
+/* ===============================
+   BUTTON CSS
+   =============================== */
+
+.widget.button {
+    padding: 4px 0;
+}
+
+.widget.button button
+{
+  padding: 12px 20px;
+  margin: 0;
+  border: 0;
+
+  font-family: @font-swatch7-font-family;
+  font-size: @font-swatch7-font-size;
+  font-weight:@font-swatch7-font-weight;
+  background-color: @font-swatch7-background-color;
+  color: @font-swatch7-color;
+  letter-spacing: @font-swatch7-letter-spacing;
+  text-decoration: none;
+}
+
+.widget.button button:hover 
+{
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+}
+
+
+/* JUSTIFY */
+
+.widget.button button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.button button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.button button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.button button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.button button.btn.italic {
+    font-style: italic;
+}
+
+.widget.button button.btn.bold {
+    font-weight: bold;
+}
+
+.widget.button span {
+    vertical-align: center;
+}
+
+.widget.button i {
+    margin-right: 5px;
+}
+
+/* ===============================
+   CONTENT CSS
+   =============================== */
+
+
+.widget.content
+{
+    padding: 0;
+    overflow: hidden;
+}
+
+.widget.content span.expand
+{
+    font-family: @font-swatch3-font-family;
+    background-color: @color-swatch3;
+    color: @font-swatch7-color;
+    font-size: @font-swatch5-font-size;
+    padding: 4px 8px;
+    margin: 4px 0;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.widget.content span.expand:hover,
+.widget.content span.expand:focus
+{
+    cursor: pointer;
+    background-color: darken(@color-swatch3,5%);
+}
+
+/* ===============================
+   IMAGE WIDGET
+   =============================== */
+
+.widget.image img
+{
+    display:block;
+    max-width: 100%;
+}
+
+.widget.image {
+}
+
+.widget.image span.image-title {
+    display: block;
+    margin:5px;
+    font-family: @font-swatch4-font-family;
+    font-weight: @font-swatch4-font-weight;
+    font-size: @font-swatch4-font-size;
+    text-align: center;
+    text-transform: uppercase;
+    line-height: @font-swatch4-line-height;
+}
+
+.widget.image span.image-description {
+    display: block;
+    margin:5px;
+    text-align: center;
+    font-family: @font-swatch5-font-family;
+    font-weight: @font-swatch5-font-weight;
+    font-size: @font-swatch5-font-size;
+    line-height: @font-swatch5-line-height;
+}
+
+/* ===============================
+   GALLERY WIDGET
+   =============================== */
+
+.widget.gallery
+{
+  
+  width: 101.2%;
+  margin-left: -0.5%;
+}
+
+.widget.gallery ul {
+    display:block;
+    margin: 0;
+    padding:0px;
+    list-style: none;
+}
+
+.widget.gallery li {
+    float: left;
+    position: relative;
+    width: 33.3%;
+    padding-bottom: 33%;
+}
+
+.widget.gallery li  span.inner {
+    background-position:center center;
+    background-repeat:no-repeat;
+    background-color: @color-swatch1;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.widget.gallery ul li.one-to-one span.inner
+{
+    background-size:100% 100%;
+}
+
+.widget.gallery ul li.portrait span.inner
+{
+    background-size:100% auto;
+}
+
+.widget.gallery ul li.landscape span.inner
+{
+    background-size:auto 100%;
+}
+
+.widget.gallery li span.inner {
+    position: absolute;
+    left: 5px;
+    right: 5px;
+    top: 0px;
+    bottom: 16px;
+    overflow: hidden;
+}
+
+.widget.gallery li span.inner img {
+    display:none;
+}
+
+.widget.gallery ul:before,
+.widget.gallery ul:after {
+  content: " ";
+  display: table;
+}
+.widget.gallery ul:after {
+  clear: both;
+}
+.widget.gallery ul {
+  *zoom: 1;
+}
+
+.widget.gallery li span.inner .title, .widget.gallery li span.inner .description {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin-bottom: -50px;
+    background:@color-swatch1;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    text-align: center;
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:@font-swatch5-line-height;
+    color:@color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+    text-transform: uppercase;
+}
+.widget.gallery li span.inner:hover .title {
+   margin-bottom: 0;
+}
+
+.widget.gallery li span.inner .description {
+  display: none;
+}
+
+.widget.gallery li span.inner a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+/* ===============================
+   DIVIDER WIDGET
+   =============================== */
+
+.widget.line {
+    padding: 20px 0px;
+}
+
+hr.line {
+   background-color: lighten(@color-swatch5,35%);
+   height: 1px;
+   width: 100%;
+   border: none;
+}
+
+hr.line.align-left {
+   margin: 20px auto 20px 0px;
+}
+
+hr.line.align-center {
+   margin: 20px auto;
+}
+
+hr.line.align-right {
+   margin: 20px 0px 20px auto;
+}
+
+
+/* ===============================
+   CLICK TO CALL WIDGET
+   =============================== */
+
+.widget.clicktocall {
+   padding: 13px 0px;
+}
+
+.widget.clicktocall a {
+  background-image: image('/images/ic-desktop-call.png');
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding: 0px 0px 0px 29px;
+  font-family: @font-swatch5-font-family;
+  font-weight:@font-swatch5-font-weight;
+  color: @font-swatch5-color;
+  letter-spacing: @font-swatch5-letter-spacing;
+  font-size: @font-swatch5-font-size;
+  text-decoration: none;
+}
+
+.widget.clicktocall a:hover {
+  cursor: pointer;
+}
+
+
+/* CLICK TO CALL - JUSTIFY */
+
+.widget.clicktocall a.justifyleft
+{
+    text-align: left;
+}
+
+.widget.clicktocall a.justifycenter
+{
+    text-align: center;
+}
+
+.widget.clicktocall a.justifyright
+{
+    text-align: right;
+}
+
+.widget.clicktocall a.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.clicktocall a.italic {
+    font-style: italic;
+}
+
+.widget.clicktocall a.bold {
+    font-weight: bold;
+}
+
+
+/* ===============================
+   REDIRECT WIDGET
+   =============================== */
+
+.widget.redirecttodesktop {
+    padding: 8px 0;
+}
+
+.widget.redirecttodesktop a {
+    padding-right: 30px;
+    padding-top: 2px;
+    background-image: image('/images/desktop.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    font-size: 12px;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    text-decoration: none;
+    cursor: pointer;
+    color: @font-swatch5-color;
+    font-family: @font-swatch5-font-family;
+
+}
+
+.widget.redirecttodesktop a:hover, .desktop a:active {
+    background-image: image('/images/desktop.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+/* ===============================
+   TWITTER WIDGET
+   =============================== */
+
+
+.widget.twitter {
+  background-image: image('/images/form-bg.png');
+  background-repeat: repeat;
+  background-position: left center;
+  padding: 30px;
+  margin: 0;
+  background-color: @color-swatch7;
+}
+
+.widget.twitter span, .widget.twitter time {
+  font-family: @font-swatch4-font-family;
+  font-weight: @font-swatch5-font-weight;
+  color: @color-swatch5;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.widget.twitter a {
+   color: @color-swatch5;
+   font-size: 12px;
+   text-decoration: none;
+}
+
+.widget.twitter a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.widget.twitter ul {
+    padding: 0px;
+    margin: 0;
+}
+
+.widget.twitter ul li {
+    border-bottom: none;
+    list-style: none;
+    font-family: @font-swatch5-font-family;
+    color: @font-swatch5-color;
+    padding-bottom: 30px;
+}
+
+.widget.twitter img {
+    width: 50px;
+    height: 50px;
+}
+
+.widget.twitter ul li:last-child {
+    padding-bottom: 0px;
+}
+
+.widget.twitter .twitter-profile-pic {
+    float: left;
+    padding: 30px 20px 30px 30px;
+    height: 100px;
+}
+
+.widget.twitter .twitter-content {
+    background-image: image('/images/dark-texture.png');
+    background-repeat: repeat;
+    background-position: left center;
+    border: 1px solid @color-swatch7;
+    padding: 20px;
+    margin: 0;
+    background-color: @color-swatch7;
+    padding: 30px;
+}
+
+.widget.twitter .twitter-content p {
+  font-size: 16px;
+  line-height: 30px;
+  color: #ddd;
+}
+
+.widget.twitter .twitter-content span.bk-full-name {
+  font-family: @font-swatch4-font-family;
+  font-size: @font-swatch5-font-size;
+  color: @color-swatch2;
+  padding-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+
+/* ===============================
+   CONTACT FORM WIDGET
+   =============================== */
+
+.widget.contactform form {
+    display: block;
+    background-image: image('/images/form-bg.png');
+    background-repeat: repeat;
+    background-position: left center;
+    padding: 30px;
+    margin: 0;
+    background-color: @color-swatch7;
+}
+
+.widget.contactform fieldset {
+    border: none;
+    padding: 0;
+}
+
+.widget.contactform fieldset label {
+    width: 100%;
+    float: left;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight:@font-swatch5-font-weight;
+    line-height:@font-swatch5-line-height;
+    color:@color-swatch1;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+
+.widget.contactform fieldset input {
+    background-image: image('/images/dark-texture.png');
+    background-repeat: repeat;
+    background-position: left center;
+    background-color: @color-swatch7;
+    height: 64px;
+    width: 100%;
+    border: 1px solid @color-swatch7;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @color-swatch5;
+    text-indent: 16px;
+    margin-top: 6px;
+    margin-bottom: 30px;
+}
+
+.widget.contactform fieldset input:focus, .widget.contactform fieldset textarea:focus {
+  outline: 1px solid @color-swatch2;
+}
+
+.widget.contactform fieldset textarea {
+    background-image: image('/images/dark-texture.png');
+    background-repeat: repeat;
+    background-position: left center;
+    background-color: @color-swatch7;
+    height: 136px;
+    width: 100%;
+    border: 1px solid @color-swatch7;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 16px;
+    padding-top: 14px;
+    margin-top: 6px;
+    margin-bottom: 20px;
+    resize: none;
+}
+
+  ::-webkit-input-placeholder { /* WebKit browsers */
+      color:    lighten(@color-swatch5,10%);
+  }
+  :-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+      color:    lighten(@color-swatch5,10%);
+  }
+  ::-moz-placeholder { /* Mozilla Firefox 19+ */
+      color:    lighten(@color-swatch5,10%);
+  }
+  :-ms-input-placeholder { /* Internet Explorer 10+ */
+      color:    lighten(@color-swatch5,10%);
+  }
+
+.widget.contactform fieldset button.btn {
+    float: right;
+    padding: 7px 16px;
+    margin: 0;
+    border: 0;
+
+    font-family: @font-swatch2-font-family;
+    font-size:1em;
+    font-weight:@font-swatch7-font-weight;
+    color: @color-swatch1;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+    border: 2px solid @color-swatch2;
+    text-transform: uppercase;
+    background-color: transparent;
+    letter-spacing: 1px;
+}
+  
+.widget.contactform fieldset button.btn:hover {
+  background-color: darken(@color-swatch7,5%);
+  cursor: pointer;
+}
+
+.widget.contactform fieldset button.btn.justifyleft
+{
+    text-align: left;
+}
+
+.widget.contactform fieldset button.btn.justifycenter
+{
+    text-align: center;
+}
+
+.widget.contactform fieldset button.btn.justifyright
+{
+    text-align: right;
+}
+
+.widget.contactform fieldset button.btn.justifyfull
+{
+    text-align: justify;
+}
+
+.widget.contactform fieldset button.btn.italic {
+    font-style: italic;
+}
+
+.widget.contactform fieldset button.btn.bold {
+    font-weight: bold;
+}
+
+
+/* ===============================
+   TWEET THIS WIDGET
+   =============================== */
+
+.widget.tweet {
+   padding: 20px 0; 
+}
+
+.widget.tweet a {
+    background-image: image('/images/socialicons-twitter.svg');
+    background-position: 10px center;
+    background-repeat: no-repeat;
+    background-size: 22px;
+    padding: 12px 14px 12px 39px;
+    margin: 0;
+    border: 0;
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight:@font-swatch7-font-weight;
+    background-color: @font-swatch7-background-color;
+    color: @font-swatch7-color;
+    text-decoration: none;
+}
+
+.widget.tweet a:hover 
+{
+    background-color: @font-swatch7-background-color-hover;
+    cursor: pointer;
+}
+
+
+
+/* ==================================
+   SOCIAL BAR WIDGET / SOCIAL PROFILE
+   =============================== */
+
+.widget.socialicons, .widget.profile .bk-profile-socialicons {
+    padding: 0px;
+    font-size:1em;
+    font-family:@font-swatch7-font-family;
+    color: @font-swatch5-color;
+}
+
+.widget.socialicons a, .widget.profile .bk-profile-socialicons a {
+    text-decoration: none;
+    text-indent: -9999px;
+}
+
+.widget.profile .bk-profile-socialicons span {
+  display: inline-block;
+  color: @color-swatch1;
+  padding: 0px;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.2);
+}
+
+.widget.socialicons span a, .widget.profile .bk-profile-socialicons span a {
+    display: inline-block;
+    margin-right: 6px;
+    margin-bottom: 6px;
+    background-size: 22px;
+    width: 40px;
+    height: 40px;
+    border: 1px solid darken(@color-swatch2,5%);
+    background-color: @color-swatch2;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.widget.socialicons span a:hover, .widget.profile 
+.bk-profile-socialicons span a:hover {
+    background-color: darken(@color-swatch2,2%);
+}
+
+.widget.socialicons span.bk-socialicons-twitter a, 
+.widget.profile .bk-profile-socialicons span.bk-socialicons-twitter a {
+    background-image: image('/images/socialicons-twitter.svg')
+}
+
+.widget.socialicons span.bk-socialicons-linkedin a, 
+.widget.profile .bk-profile-socialicons span.bk-socialicons-linkedin a {
+    background-image: image('/images/socialicons-linkedin.svg');
+}
+
+.widget.socialicons span.bk-socialicons-facebook a, 
+.widget.profile .bk-profile-socialicons span.bk-socialicons-facebook a {
+    background-image: image('/images/socialicons-facebook.svg');
+}
+
+.widget.socialicons span.bk-socialicons-rss a, 
+.widget.profile .bk-profile-socialicons span.bk-socialicons-rss a {
+    background-image: image('/images/socialicons-rss.svg');
+}
+
+.widget.socialicons span.bk-socialicons-googleplus a, 
+.widget.profile .bk-profile-socialicons span.bk-socialicons-googleplus a {
+    background-image: image('/images/socialicons-googleplus.svg');
+}
+
+.widget.socialicons span.bk-socialicons-youtube a, 
+.widget.profile .bk-profile-socialicons span.bk-socialicons-youtube a {
+    background-image: image('/images/socialicons-youtube.svg');
+}
+
+
+/* ===============================
+   PROFILE WIDGET
+   =============================== */
+
+nav .widget.profile {
+  display: inline;
+  float: left;
+}
+
+.widget.profile {
+    margin-bottom: 10px;
+}
+
+.widget.profile span, footer .widget.profile .bk-profile-email a {
+  font-family: @font-swatch4-font-family;
+  font-size: bkscale(@font-swatch4-font-size,1.1);
+  color: @font-swatch5-color;
+  font-weight: @font-swatch4-font-weight;
+}
+
+footer .widget.profile span {
+  display: block;
+}
+
+/* FOOTER PROFILE STYLES */
+
+.widget.profile ul.twitter {
+    padding: 0;
+    margin: 0;
+}
+
+/* FOOTER PROFILE STYLES */
+
+.widget.profile ul.twitter {
+  padding: 0px;
+  margin: 0px;
+}
+
+.widget.profile ul.twitter li {
+  list-style: none;
+}
+
+.widget.profile ul.twitter p {
+  font-family: @font-swatch4-font-family;
+  font-size: bkscale(@font-swatch4-font-size,1.1);
+  color: @font-swatch5-color;
+  font-weight: @font-swatch4-font-weight;
+}
+
+.widget.profile ul.twitter img, .widget.profile ul.twitter time,
+.widget.profile ul.twitter span {
+  display: none;
+}
+
+/* SIGN UP */
+
+.widget.profile form {
+  padding: 0px;
+  margin: 20px 0px;
+}
+
+.widget.profile fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.widget.profile label {
+    float: left;
+    width: 100%;
+    margin-bottom: 8px;
+    font-family:@font-swatch4-font-family;
+    font-size:@font-swatch4-font-size;
+    font-weight: @font-swatch4-font-weight;
+    color: @color-swatch1;
+    line-height:@font-swatch4-line-height;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+.widget.profile fieldset input {
+    width: 56%;
+    height: 60px;
+    padding: 0;
+    margin-right: 1%;
+    background-color: @color-swatch7;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 20px;
+    border: 1px solid lighten(@color-swatch7,7%);
+}
+
+.widget.profile fieldset input:focus {
+  outline: none;
+}
+
+.widget.profile button {
+    width: 18%;
+    height: 62px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: @font-swatch7-background-color;
+    font-family: @font-swatch7-font-family;
+    font-weight: @font-swatch7-font-weight;
+    letter-spacing: @font-swatch7-letter-spacing;
+    color: @font-swatch7-color;
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.widget.profile button:hover {
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+}
+
+
+/* ===============================
+   SIGNUP FORM WIDGET
+   =============================== */
+
+.widget.signupform {
+  padding: 0px;
+}
+
+.widget.signupform fieldset {
+  padding: 0;
+  border: 0;
+  margin: 0;
+}
+
+.widget.signupform label {
+    float: left;
+    width: 100%;
+    margin-bottom: 8px;
+    font-family:@font-swatch4-font-family;
+    font-size:@font-swatch4-font-size;
+    font-weight: @font-swatch4-font-weight;
+    color: @font-swatch4-color;
+    line-height:@font-swatch4-line-height;
+    letter-spacing: @font-swatch4-letter-spacing;
+}
+
+.widget.signupform fieldset input {
+    width: 56%;
+    height: 60px;
+    padding: 0;
+    margin-right: 1%;
+    background-color: @color-swatch1;
+    font-family: @font-swatch5-font-family;
+    font-size: @font-swatch5-font-size;
+    color: @font-swatch5-color;
+    text-indent: 20px;
+    border: 1px solid darken(@color-swatch1,10%);
+}
+
+.widget.signupform fieldset input:focus {
+  outline: none;
+}
+
+.widget.signupform button {
+    width: 18%;
+    height: 62px;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: @font-swatch7-background-color;
+    font-family: @font-swatch7-font-family;
+    font-weight: @font-swatch7-font-weight;
+    letter-spacing: @font-swatch7-letter-spacing;
+    color: @font-swatch7-color;
+    font-size: 1em;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.widget.signupform button:hover {
+  background-color: @font-swatch7-background-color-hover;
+  cursor: pointer;
+}
+
+
+/* ===============================
+   SLIDESHOW WIDGET
+   =============================== */
+
+.widget.responsiveslideshow .slideshow-widget-wrapper {
+  height: 500px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next{
+  width: 50px;
+  height: 50px;
+  top: 42%;
+}
+
+.widget.responsiveslideshow .slideshow-image-list {
+    height: 500px;
+}
+
+.widget.responsiveslideshow .slideshow-widget {
+    background-color: lighten(@color-swatch5,17%);
+}
+.widget.responsiveslideshow span.inner img {
+    width:auto;
+    height:100%;
+}
+
+.widget.responsiveslideshow .image-wrapper {
+    padding:15px;
+}
+
+.widget.responsiveslideshow .crop .image-wrapper {
+    padding:0;
+}
+
+.widget.responsiveslideshow .content-wrapper {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    top:auto;
+    background-color: hsla(hue(@color-swatch2), saturation(@color-swatch2), lightness(lighten(@color-swatch4,10%)), 1); 
+}
+
+.widget.responsiveslideshow .title {
+    display: inline-block;
+    padding:5px 20px 0 20px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .description {
+    display: block;
+    padding: 6px 20px;
+    font-family:@font-swatch5-font-family;
+    font-size:@font-swatch5-font-size;
+    font-weight: @font-swatch5-font-weight;
+    line-height:bkscale(@font-swatch5-line-height, 0.55);
+    color: @color-swatch1;
+    letter-spacing: @font-swatch5-letter-spacing;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev, 
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+    font-size: 0;
+    z-index: 11;
+    text-indent: -99999px;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
+  background-image: image('/images/slideshow-arrow-left.png');
+  left: 0;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+  right: 0;
+  background-image: image('/images/slideshow-arrow-right.png'); 
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls {
+  position: relative;
+  bottom: 64px;
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-play
+{
+    background: image('/images/slideshow-play.png') center no-repeat;
+    background-size: 100%;
+    border-radius:10px;
+    font-size:0;
+    text-indent: -99999px;
+}
+
+.widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause
+{
+    background: image('/images/slideshow-pause.png') center no-repeat;
+    background-size: 100%;  
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls .dot
+{
+  border: none;
+  cursor: pointer;
+  background-color: @color-swatch1;
+  border-radius: 50%;
+  width: 14px;
+  height: 14px; 
+  margin: 22px 5px;
+}
+
+.widget.responsiveslideshow .slideshow-widget-controls .dot.selected
+{
+    background-color: @color-swatch2;
+}
+
+
+/* ===============================
+   IPAD WIDTH
+   =============================== */
+
+@media only screen and (max-width: 768px) {
+
+  header .header-bg {
+    padding: 40px 0;
+  }
+
+  .widget.companyheader {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .widget.companyname {
+    text-align: center;
+  }
+
+  .widget.companyname h1 {
+    font-size:bkscale(@font-swatch1-font-size, 0.8)
+  }
+
+  header .header-profilephone {
+    padding: 7px 0px;
+  }
+
+  header .header-profilephone span {
+    font-size: bkscale(@font-swatch5-font-size,0.9);
+  }
+
+  footer {
+    padding: 4em 0em;
+  }
+
+  /* NAV */
+
+  .widget.extendednavigation {
+    width: 100%;
+    padding: 0;
+  }
+
+  .widget .extendednavigation {
+    display: block;
+    float: left;
+    width: 100%;
+  }
+
+  /* NAV ICON */
+
+  .widget .extendednavigation a.pull {
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 9px;
+  }
+
+    .widget .extendednavigation a.pull:after {
+    content:"";
+    background: image('/images/nav-icon.png') no-repeat;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: -50px;
+  }
+
+  .main .widget .extendednavigation a.pull {
+    display: none;
+  }
+
+    /* NAV */
+
+    .widget .extendednavigation ul {
+        width: 100%;
+        display: none;
+        padding: 0px; 
+    }
+
+    .widget .extendednavigation li {
+        width: 100%;
+        padding: 0px;
+        border-bottom: 1px solid darken(@color-swatch2,3%);
+    }
+
+    .widget.extendednavigation ul li.folder {
+      padding-left: 0;
+      background-image: image('/images/arrow-down.png');
+      background-position: right center;
+      background-repeat: no-repeat;
+    }
+
+    .widget .extendednavigation li:last-child {
+      margin-bottom: 10px;
+      border-bottom: 0;
+    }
+
+    .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
+        padding: 18px 12px;
+    }
+
+    .widget.extendednavigation ul li > ul {
+        display: none!important;
+    }
+
+    .widget.extendednavigation ul li:hover > ul {
+        display: block!important;
+        width: 100%;
+        padding: 0;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li {
+      border-bottom: 0;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li a {
+        padding: 12px 18px;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li a .text {
+      padding: 6px 26px;
+    }
+
+    .widget.extendednavigation ul li:hover > ul li:first-child {
+
+    }
+
+    /* EXTENDED NAVIGATION - INSIDE ZONE */
+
+    .main .widget.extendednavigation ul {
+        display: block;
+    }
+
+    /* FORMS */
+
+    .widget.contactform fieldset input {
+        width: 100%;
+    }
+
+    .widget.signupform label {
+        width: 100%;
+        float: left;
+    }
+
+    .widget.contactform form, .widget.twitter, .widget.map {
+        padding: 20px;
+    }
+
+    /* TWITTER */
+
+    .widget.twitter ul li {
+        padding-bottom: 20px;
+    }
+
+    .widget.twitter .twitter-profile-pic {
+        height: inherit;
+    }
+
+    /* FEATURE */
+
+     .widget.feature .feature-bgimg {
+      height: 350px; 
+      }
+
+    .widget.feature .content {
+      height: 350px;
+      padding-top: 14px;
+    }
+
+    .widget.feature h2 span, .widget.feature h3 span {
+      padding: 12px;
+    }
+
+    .widget.feature h2 {
+      font-size:bkscale(@font-swatch8-font-size, 0.8); 
+    }
+
+    .widget.feature h3 {
+      font-size:bkscale(@font-swatch9-font-size, 0.8); 
+    }
+
+    /* GALLERY */
+
+    .widget.gallery ul.gallery-widget li
+    {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+
+    /* SLIDESHOW */
+
+    .widget.responsiveslideshow .slideshow-widget-controls {
+        padding: 0;
+    }
+
+    .widget.responsiveslideshow .slideshow-widget-controls .dot {
+        height: 10px;
+        width: 10px;
+    }
+
+    .widget.responsiveslideshow .slideshow-widget-wrapper, .widget.responsiveslideshow .slideshow-image-list {
+        height: 350px;
+    }
+
+}
+
+
+/* ===============================
+   IPHONE WIDTH
+   =============================== */
+
+@media only screen and (max-width: 480px) {
+
+  .main {
+    padding: 20px 0;
+  }
+
+  /* COMPANY HEADER */
+  .widget.companyname h1 {
+    font-size:bkscale(@font-swatch1-font-size, 0.8);
+  }
+
+  footer {
+    padding: 3em 0em;
+  }
+
+  /* NAV */
+
+  /* UL ALIGN RIGHT */
+  .widget.extendednavigation ul.align-right li:hover ul li {
+    text-align: right;
+  }
+
+  .widget.extendednavigation ul.align-right li.folder {
+    background-position: 12px center;
+  }
+
+  /* UL ALIGN CENTER */
+  .widget.extendednavigation ul.align-left li:hover ul li {
+    text-align: center;
+  }
+
+  /* UL ALIGN LEFT */
+  .widget.extendednavigation ul.align-left li:hover ul li {
+    text-align: left;
+  }
+
+  /* FEATURE */
+
+  .widget.feature .feature-bgimg {
+    height: 220px; 
+   }
+
+  .widget.feature .content {
+    height: 220px;
+  }
+
+  .widget.feature h2 span, .widget.feature h3 span {
+    padding: 5px;
+  }
+
+  .widget.feature h2 {
+    font-size:bkscale(@font-swatch8-font-size, 0.6);
+  }
+
+  .widget.feature h3 {
+    font-size:bkscale(@font-swatch8-font-size, 0.6);
+  }
+
+  .widget.feature button {
+    font-size: bkscale(@font-swatch7-font-size, 0.9);
+    padding: 8px 12px;
+  }
+
+  /* CLICK TO CALL */
+
+  .widget.clicktocall a {
+    background-image: image('/images/ic-call.svg');
+    background-size: 7px;
+    background-color: @font-swatch7-background-color;
+    background-position: 15px center;
+    background-repeat:no-repeat;
+    padding: 12px 12px 12px 36px;
+    margin: 0;
+    border: 0;
+
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-color;
+    font-weight:@font-swatch7-font-weight;
+    color: @font-swatch7-color;
+    text-decoration: none;
+    text-shadow: 0 1px 0px rgba(0,0,0,0.2);
+  }
+
+  .widget.clicktocall a:hover {
+   background-image: image('/images/ic-call.svg');
+    background-size: 7px;
+    background-color: @font-swatch7-background-color;
+    background-position: 15px center;
+    background-repeat:no-repeat;
+    padding: 12px 12px 12px 36px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+
+    /* SLIDESHOW */
+
+    .widget.responsiveslideshow .slideshow-widget-wrapper, .widget.responsiveslideshow .slideshow-image-list {
+        height: 240px;
+    }
+
+    .widget.responsiveslideshow .slideshow-widget .btn-prev, 
+    .widget.responsiveslideshow .slideshow-widget .btn-next {
+        height: 40px;
+        width: 40px;
+        background-size: 10px;
+    }
+
+    .widget.responsiveslideshow .slideshow-widget-controls {
+        bottom: 50px;
+    }
+
+}
+
+@media only screen and (min-width: 1140px) {
+  .wrapper {
+    width: 960px; /* 1140px - 10% for margins */
+    margin: 0 auto;
+  }
+}
+
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+
+
+

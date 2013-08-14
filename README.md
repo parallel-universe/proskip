@@ -1,4 +1,6 @@
-proskip
-=======
+hatch
+=====
 
-BaseKit's ProSkip Template
+BaseKit's Hatch Template
+
++ Switched to develop branch - 07/06/13

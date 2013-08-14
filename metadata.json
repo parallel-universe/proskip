@@ -1,0 +1,133 @@
+{
+	"name":"ProSkip",
+	"thumbnail":"proskip.png",
+	"screenshot":"proskip.png",
+    "colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#ffffff",
+            "color2":"#ffbd00",
+            "color3":"#5a8ac5",
+            "color4":"#242424",
+            "color5":"#858585",
+            "color6":"#ffffff",
+            "color7":"#424242"
+        },
+        "Swatch 2": {
+            "color1":"#ffffff",
+            "color2":"#f0783c",
+            "color3":"#3598c1",
+            "color4":"#242424",
+            "color5":"#858585",
+            "color6":"#ffffff",
+            "color7":"#182529"
+        },
+        "Swatch 3": {
+            "color1":"#ffffff",
+            "color2":"#74c3d5",
+            "color3":"#e84840",
+            "color4":"#242424",
+            "color5":"#858585",
+            "color6":"#ffffff",
+            "color7":"#292020"
+        },
+        "Swatch 4": {
+            "color1":"#ffffff",
+            "color2":"#8daf9f",
+            "color3":"#c8905a",
+            "color4":"#242424",
+            "color5":"#858585",
+            "color6":"#ffffff",
+            "color7":"#424242"
+        },
+        "Swatch 5": {
+            "color1":"#ffffff",
+            "color2":"#f24e35",
+            "color3":"#49667b",
+            "color4":"#242424",
+            "color5":"#858585",
+            "color6":"#ffffff",
+            "color7":"#424242"
+        }
+    },
+    "fontSwatch": {
+       "title": "Titillium Web",
+        "font1": {
+            "font-family": "Titillium Web",
+            "font-size": "39px",
+            "font-weight": "400",
+            "line-height": "32px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Titillium Web",
+            "font-size": "28px",
+            "font-weight": "inherit",
+            "line-height": "36px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Titillium Web",
+            "font-size": "22px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Titillium Web",
+            "font-size": "16px",
+            "font-weight": "100",
+            "line-height": "26px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Titillium Web",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Titillium Web",
+            "font-size": "18px",
+            "font-weight": "400",
+            "line-height": "26px",
+            "color": "@color-swatch6",
+            "color-hover": "darken(@color-swatch6,20%)",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "darken(@color-swatch2,3%)"
+        },
+        "font7": {
+            "font-family": "Titillium Web",
+            "font-size": "16px",
+            "font-weight": "inherit",
+            "line-height": "27px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch3",
+            "background-color-hover": "darken(@color-swatch3,3%)"
+        },
+        "font8": {
+            "font-family": "Titillium Web",
+            "font-size": "27px",
+            "font-weight": "400",
+            "line-height": "36px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Titillium Web",
+            "font-size": "28px",
+            "font-weight": "400",
+            "line-height": "36px",
+            "color": "@color-swatch1",
+            "letter-spacing": "inherit"
+        }
+    }
+}

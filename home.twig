@@ -1,0 +1,55 @@
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<header class="clearfix">
+    <div class="header-bg">
+         <div class="wrapper companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "ProSkip"})|raw}}
+            <div class="header-profilephone">
+                <span>{{ profile.phone }}</span>
+            </div>
+        </div>
+    </div>
+    <nav>
+        <div class="wrapper clearfix">
+            <div class="welcome-text">
+                {{widget('content', 'headercontent1', {"content":"<h3>Lorem Ipsum - Alam Thor</h3>"})|raw}}  
+            </div>  
+            {{widget('extendednavigation', 'navigationheader', {})|raw}}
+        </div>
+    </nav>
+</header>
+
+<div class="main wrapper clearfix">
+    <section>
+        {{widget('feature', 'featurehome', {"header": "Working hand in hand with world class, professional artists &amp; photographers", "buttonText":"View Portfolio","defaultBgImg": asset('images/feature-bg.jpg'), 'positionTopPercentage': '50','showBtn': true})|raw}}
+    </section>
+    {{zone('main')|raw}}
+</div>  
+
+<footer>
+    <div class="wrapper clearfix">
+        <div class="responsivecolumns columns-two-50-50">
+            <div class="column columns-two-left">
+                {{widget('content', 'footercolumn1content1', {"content":"<h3>Aliquam Sodales</h3>"})|raw}}
+                {{widget('profile', 'footercolumn1profileemail', { 'profileType':'email', 'email':'profile'})|raw}}
+                {{widget('profile', 'footercolumn1profilephone', { 'profileType':'phone', 'phone':'profile'})|raw}}
+            </div>
+            <div class="column columns-two-right">
+                 {{widget('content', 'footercolumn1content1', {"content":"<h3>Lorem Upsum</h3>"})|raw}}
+                {{widget('profile', 'footercolumn2profileaddress', { 'profileType':'address', 'address':'profile'})|raw}}
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}
+     {{widget('profile', 'footercolumn2profileaddress', { 'profileType':'address', 'address':'profile'})|raw}}
+            </div>
+        </div>
+    </div>
+</footer>
+
+{% endblock %}
