@@ -8,9 +8,11 @@
     <div class="header-bg">
          <div class="wrapper companyheader clearfix">
             {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
-            {{widget('companyname', 'companyname', {"business": "ProSkip"})|raw}}
+            {{widget('companyname', 'companyname', {"business": "profile"})|raw}}
             <div class="header-profilephone">
-                <span>{{ profile.phone }}</span>
+                {% if profile.phone|length > 0 %}  
+                   {{widget('clicktocall', 'headerclicktocall', {})|raw}}
+                {% endif %}
             </div>
         </div>
     </div>
