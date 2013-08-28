@@ -93,17 +93,7 @@ ul, ol, li {
 }
 
 blockquote {
-  background: lighten(@color-swatch5,20%);
-  margin:0;
-  padding: 14px 16px;
-  quotes:"\201C""\201D""\2018""\2019";
-}
-
-blockquote {
-  background: darken(@color-swatch1,5%);
-  border: 1px solid darken(@color-swatch1,10%);
-  margin:0;
-  padding: 20px;
+  margin: 20px 0;
   quotes:"\201C""\201D""\2018""\2019";
   font-family:@font-swatch5-font-family;
   font-size:@font-swatch5-font-size;
@@ -119,6 +109,16 @@ blockquote:before {
   font-size:4em;
   line-height:.1em;
   margin-right:.1em;
+  vertical-align:-.4em;
+}
+
+blockquote:after {
+  font-family: georgia;
+  color: @font-swatch5-color;
+  content:close-quote;
+  font-size:4em;
+  line-height:.1em;
+  margin-left:.1em;
   vertical-align:-.4em;
 }
 
