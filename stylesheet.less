@@ -210,6 +210,7 @@ header .widget.clicktocall {
 
 header .header-profilephone .widget.clicktocall a {
     background-image: image('/images/ic-call.svg');
+    background-color: transparent;
     background-size: 7px;
     background-repeat: no-repeat;
     background-position: 17px center;
@@ -1852,8 +1853,12 @@ footer .widget.profile span {
   }
 
   /* COMPANY HEADER */
-  .widget.companyname h1 {
-    font-size:bkscale(@font-swatch1-font-size, 0.8);
+  .widget.companyname a {
+    font-size:bkscale(@font-swatch1-font-size, 0.9);
+  }
+
+  header .header-profilephone {
+    display: none;
   }
 
   footer {
