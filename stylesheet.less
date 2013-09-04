@@ -1139,6 +1139,7 @@ hr.line.align-right {
     text-indent: 16px;
     margin-top: 6px;
     margin-bottom: 30px;
+    padding: 0;
 }
 
 .widget.contactform fieldset input:focus, .widget.contactform fieldset textarea:focus {
@@ -1642,7 +1643,8 @@ footer .widget.profile span {
 
 .widget.responsiveslideshow .slideshow-widget-controls {
   position: relative;
-  bottom: 64px;
+  float: left;
+  width: 100%;
 }
 
 .widget.responsiveslideshow .slideshow-widget .btn-play
@@ -1664,7 +1666,7 @@ footer .widget.profile span {
 {
   border: none;
   cursor: pointer;
-  background-color: @color-swatch1;
+  background-color: @color-swatch5;
   border-radius: 50%;
   width: 14px;
   height: 14px; 
@@ -2001,9 +2003,7 @@ footer .widget.profile span {
         background-size: 10px;
     }
 
-    .widget.responsiveslideshow .slideshow-widget-controls {
-        bottom: 50px;
-    }
+
 
 }
 
