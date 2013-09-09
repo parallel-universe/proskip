@@ -4,8 +4,8 @@
 	"screenshot":"proskip.png",
     "tags": {
         "en": ["Colorful", "Bright", "Professional", "Business", "Trade", "colorful", "colourful"],
-        "es": ["Colorido", "Claro", "Profesional", "Corporativo", "Comercio", "colorido"],
-        "br": ["Colorido", "Claro", "Profissional", "Corporativo", "Comércio", "colorido"]
+        "es": ["Colorido", "Claro", "Profesional", "Corporativo", "Comercio"],
+        "br": ["Colorido", "Claro", "Profissional", "Corporativo", "Comércio"]
     },
     "colorSwatches":
     {
