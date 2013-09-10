@@ -3,9 +3,9 @@
 	"thumbnail":"proskip.png",
 	"screenshot":"proskip.png",
     "tags": {
-        "en": ["Colorful", "Bright", "Professional", "Business", "Trade", "colorful", "colourful"],
-        "es": ["Colorido", "Claro", "Profesional", "Corporativo", "Comercio"],
-        "br": ["Colorido", "Claro", "Profissional", "Corporativo", "Comércio"]
+        "en": ["Colorful", "Bright", "Professional", "Business", "Trade", "colorful", "colourful", "company", "business", "corporate", "finance", "financial", "firm", "money", "open", "simple"],
+        "es": ["Colorido", "Claro", "Profesional", "Corporativo", "Comercio", "empresa", "negocios", "corporativo", "finanzas", "financiero", "firma", "dinero", "abierto", "simple"],
+        "br": ["Colorido", "Claro", "Profissional", "Corporativo", "Comércio", "empresa", "negócios", "corporativo", "finanças", "financeiro", "firma", "dinheiro", "aberto", "simples"]
     },
     "colorSwatches":
     {
