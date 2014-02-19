@@ -1332,14 +1332,33 @@ footer.bk-footer .widget.profile span {
         }
         .menu-items {
             li {
+                display: block;
                 padding: 20px 0;
                 .inner-item {
+                    display: block;
                     background-image: image('/images/dark-texture.png');
                     background-repeat: repeat;
                     background-position: left center;
                     background-color: @color-swatch7;
                     padding: 20px;
                     margin: 0px 0;
+                }
+                &.menu-item-promoted {
+                    text-align: center;
+                }
+            }
+            .menu-item-image-wrap {
+                height: 200px;
+                background-size: cover;
+                background-position: center;
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                clear:both;
+                background-repeat: no-repeat;
+                background-position: center;
+                img {
+                    display: none;
                 }
             }
         }
