@@ -2,6 +2,7 @@
 	"name":"ProSkip",
 	"thumbnail":"proskip.png",
 	"screenshot":"proskip.png",
+	"templateType":"standard",
     "tags": {
         "en": ["Colorful", "Bright", "Professional", "Business", "Trade", "colorful", "colourful", "company", "business", "corporate", "finance", "financial", "firm", "money", "open", "simple"],
         "es": ["Colorido", "Claro", "Profesional", "Corporativo", "Comercio", "empresa", "negocios", "corporativo", "finanzas", "financiero", "firma", "dinero", "abierto", "simple"],
